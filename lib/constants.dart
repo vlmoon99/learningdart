@@ -1,0 +1,12 @@
+const String SIGN_IN = "Sign In";
+const String SIGN_UP = "Sign Up";
+const String DONT_HAVE_ACCOUNT = "Don't have an account?";
+const String SIGN_IN_WITH = "Or Sign In With";
+const String EMAIL = "Email Adress";
+const String ENTER_EMAIL = "Enter your email address";
+const String PASSWORD = "Password";
+const String ENTER_PASSWORD = "Enter your password";
+const String REMEMBER_ME = "Remember Me";
+const String FORGOT_PASSWORD = "Forgot Password";
+const String WELCOME_BACK = "Hi, Welcome Back!";
+const String LOREM_IPSUM = "Lorem ipsum dolor sit amet, consectetur";
