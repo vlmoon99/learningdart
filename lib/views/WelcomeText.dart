@@ -8,6 +8,8 @@ class WelcomeText extends StatelessWidget {
   @override
   Widget build(Object context) {
     return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      //Текст стайлс и цвета должны быть вынесены в тему и вызваны через Theme.of(context)
+      //Так же использую .sp на TextStyles для responsive верстки
       const Text(constants.WELCOME_BACK,
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 27)),
       SizedBox(height: 4.w),

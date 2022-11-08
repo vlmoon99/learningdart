@@ -20,6 +20,9 @@ class RoundedTextField extends StatefulWidget {
 class _MyWidgetState extends State<RoundedTextField> {
   @override
   Widget build(BuildContext context) {
+    //Текст стайлс и цвета должны быть вынесены в тему и вызваны через Theme.of(context)
+    //Так же использую .sp на TextStyles для responsive верстки
+
     return TextField(
         obscureText: widget.isPassword,
         decoration: InputDecoration(
@@ -42,6 +45,11 @@ class _MyWidgetState extends State<RoundedTextField> {
               borderSide: BorderSide(color: Color(0xFFECF1F6), width: 1),
             ),
             hintText: widget.hintText),
+        //Не использую ! без основания , иначе получишь эксепшен и твоя программа упадет
+        //ЛУчше пиши через ? и в ?? присваивай значение по умолчанию
+        // или делай проверку на нул как в закоментированом примере снизу
         onChanged: (text) => widget.onTextChanged!(text));
   }
+  //     onChanged: (text) => widget.onTextChanged != null ? (text) : () {});
+
 }

@@ -29,6 +29,7 @@ class _LabeledCheckboxState extends State<LabeledCheckbox> {
 
   @override
   Widget build(BuildContext context) {
+    // Не использую подобною логику внутри build метода , в идеале он должен быть как можно меньше
     var widgets = <Widget>[
       _buildCheckbox(context),
     ];

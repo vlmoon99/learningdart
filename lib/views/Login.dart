@@ -25,6 +25,9 @@ class _MyWidgetState extends State<Login> {
 
   @override
   Widget build(BuildContext context) {
+    //Текст стайлс и цвета должны быть вынесены в тему и вызваны через Theme.of(context)
+    //Так же использую .sp на TextStyles для responsive верстки
+
     return Wrap(spacing: 2.w, runSpacing: 2.w, children: [
       const Text(constants.EMAIL,
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),

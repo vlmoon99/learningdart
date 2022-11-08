@@ -9,6 +9,8 @@ class BottomBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: [
+      //Текст стайлс и цвета должны быть вынесены в тему и вызваны через Theme.of(context)
+      //Так же использую .sp на TextStyles для responsive верстки
       Row(mainAxisAlignment: MainAxisAlignment.center, children: const [
         Text(constants.DONT_HAVE_ACCOUNT,
             style: TextStyle(fontSize: 18, color: Color(0xFF78828A))),
@@ -18,6 +20,8 @@ class BottomBlock extends StatelessWidget {
                 style: TextStyle(fontSize: 18, color: Color(0xFF980000))))
       ]),
       Padding(
+        //Нунжо использовать .w на паддингах для responsive верстки
+
         padding: const EdgeInsets.all(8.0),
         child: Row(
           children: const [
@@ -28,6 +32,8 @@ class BottomBlock extends StatelessWidget {
               ),
             ),
             Padding(
+              //Нунжо использовать .w на паддингах для responsive верстки
+
               padding: EdgeInsets.all(8.0),
               child: Text(constants.SIGN_IN_WITH,
                   style: TextStyle(fontSize: 15, color: Color(0xFF78828A))),
@@ -44,6 +50,9 @@ class BottomBlock extends StatelessWidget {
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
+          //Все стринги должны быть константами , ни одной стринги не должно быть в приложении в UI части , за
+          // исключением когда ты используешь интерполяцию
+
           SignInImageButton(imageAsset: 'images/google_image.svg'),
           SignInImageButton(imageAsset: 'images/apple_image.svg'),
           SignInImageButton(imageAsset: 'images/facebook_image.svg'),
